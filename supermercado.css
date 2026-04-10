@@ -1,0 +1,179 @@
+body {
+    background-color: #f5f5f5;
+    /* Define a cor de fundo da página */
+    font-family: Arial, sans-serif;
+    /* Define a fonte principal do site */
+    margin: 0;
+    /* Remove a margem padrão do navegador */
+    padding: 20px;
+    /* Cria um espaço interno entre a borda da página e o conteúdo */
+}
+
+.titulo-principal {
+    color: #ffffff;
+    /* Define a cor do texto como branco */
+    background-color: #2e7d32;
+    /* Define um fundo verde para o título */
+    font-size: 36px;
+    /* Define o tamanho da fonte */
+    font-weight: 800;
+    /* Deixa o texto mais grosso/negrito */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px;
+    /* Adiciona espaço interno ao redor do texto */
+    border-radius: 10px;
+    /* Arredonda as bordas */
+}
+
+.subtitulo {
+    color: #333333;
+    /* Cor do texto */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-top: 20px;
+    /* Espaço acima do elemento */
+    margin-bottom: 10px;
+    /* Espaço abaixo do elemento */
+}
+
+.texto-destaque {
+    color: #d84315;
+    /* Cor laranja avermelhada para chamar atenção */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    background-color: #fff3e0;
+    /* Fundo claro para destacar */
+    padding: 8px;
+    /* Espaço interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+.imagem-supermercado {
+    display: block;
+    /* Faz a imagem se comportar como bloco */
+    margin: 20px auto;
+    /* Centraliza a imagem horizontalmente */
+    border-radius: 12px;
+    /* Arredonda as bordas da imagem */
+    border: 3px solid #2e7d32;
+    /* Adiciona uma borda verde */
+    width: 300px;
+}
+
+.link-site {
+    color: #1565c0;
+    /* Cor azul para o link */
+    text-decoration: none;
+    /* Remove o sublinhado padrão do link */
+    font-weight: bold;
+    /* Deixa o texto do link mais forte */
+}
+
+.link-site:hover {
+    color: #0d47a1;
+    /* Muda a cor quando o mouse passa em cima */
+    text-decoration: underline;
+    /* Adiciona sublinhado no hover */
+}
+
+.menu {
+    background-color: #388e3c;
+    /* Fundo verde para o menu */
+    padding: 15px;
+    /* Espaço interno */
+    margin-top: 20px;
+    /* Espaço acima do menu */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    text-align: center;
+    /* Centraliza os links */
+}
+
+.menu a {
+    color: white;
+    /* Cor branca para os links do menu */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    margin: 0 15px;
+    /* Espaçamento lateral entre os links */
+    font-weight: bold;
+    /* Deixa os links em negrito */
+}
+
+.menu a:hover {
+    color: #c8e6c9;
+    /* Altera a cor dos links ao passar o mouse */
+}
+
+h2 {
+    color: #2e7d32;
+    /* Define a cor dos subtítulos */
+    margin-top: 30px;
+    /* Espaço acima dos subtítulos */
+}
+
+.lista-frutas {
+    background-color: #ffffff;
+    /* Fundo branco para a lista */
+    padding: 20px;
+    /* Espaço interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    width: fit-content;
+    /* Faz a largura se ajustar ao conteúdo */
+}
+
+.lista-frutas li {
+    color: #333333;
+    /* Cor do texto dos itens */
+    margin-bottom: 8px;
+    /* Espaço abaixo de cada item */
+}
+
+.lista-passos {
+    background-color: #ffffff;
+    /* Fundo branco para a lista ordenada */
+    padding: 20px;
+    /* Espaço interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    width: fit-content;
+    /* Ajusta a largura ao conteúdo */
+}
+
+.lista-passos li {
+    color: #333333;
+    /* Cor dos itens */
+    margin-bottom: 8px;
+    /* Espaço abaixo de cada item */
+}
+
+.botao-compra {
+    background-color: #00ff8c;
+    /* Fundo laranja no botão */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Remove a borda padrão */
+    padding: 12px 20px;
+    /* Espaço interno vertical e horizontal */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Texto em negrito */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Mostra a mãozinha ao passar o mouse */
+    margin-top: 20px;
+    /* Espaço acima do botão */
+}
+
+.botao-compra:hover {
+    background-color: #e65100;
+    /* Muda a cor do botão ao passar o mouse */
+}
