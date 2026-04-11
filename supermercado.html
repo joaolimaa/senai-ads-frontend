@@ -1,21 +1,65 @@
 <!doctype html>
+<!-- Informa ao navegador que este documento usa HTML5 -->
 <html lang="pt-br">
+  <!-- Início do documento HTML e definição do idioma como português do Brasil -->
   <head>
+    <!-- Parte de configurações da página, que não aparece diretamente no conteúdo -->
     <meta charset="UTF-8" />
+    <!-- Permite usar acentos e caracteres especiais corretamente -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Supermecado</title>
-    <link rel="icon" href="./assets/carrinho.png" />
+    <!-- Faz a página se adaptar melhor a telas menores -->
+    <title class="titulo">Supermercado Bom Preço</title>
+    <!-- Título que aparece na aba do navegador -->
+    <link rel="icon" href="./assets/grocery-store.ico" />
+    <!-- Ícone da página que aparece ao lado do título na aba -->
     <link rel="stylesheet" href="supermercado.css" />
+    <!-- Faz a ligação com o arquivo CSS externo -->
   </head>
 
   <body>
-    <!--Temos 3 formas de usar o css no projeto, a primeira (ideal) é criar um arquivo separado e puxá-lo dentro da tag head, a segunda usar o css inline e a terceira usar a tag <style> dentro da tag <head> -->
-    <h1 class="titulo-principal">Título 1</h1>
-    <!--Tag h (vai do 1 ao 6) e representa os títulos em uma página-->
+    <!-- Tudo que fica dentro do body aparece visivelmente na página -->
 
-    <p>Olá!</p>
-    <!--Tag p (parágrafo), usada para colocar textos na página que criam um espaçamento entre eles-->
-    <span>Olá</span>
-    <!--Tag span, usada para colocar texto, mas não tem nenhuma adição de mrgens ao redor (texto flutua na página)-->
+    <div class="titulo-principal">
+      <h1 class="titulo-principal">DISPLAY <br> TECH</h1>
+
+      <nav class="centro">      <!-- Área de navegação da página -->
+        <a href="#inicio" class="centro">Início</a>
+        <!-- Link do menu apontando para a seção início -->
+        <a href="#ofertas" class="centro">Ofertas</a>
+        <!-- Link do menu apontando para a seção ofertas -->
+        <a href="#contato" class="centro">Contato</a>
+        <!-- Link do menu apontando para a seção contato -->
+      </nav>
+    </div>
+    
+    <p>
+      Visite nosso site parceiro:
+      <a href="https://www.google.com" target="_blank" class="link-site">
+        Clique aqui
+      </a>
+    </p>
+    
+
+    
+    <!-- Título principal da página com uma classe para estilizar no CSS -->
+
+    <h2 class="subtitulo">
+      manutenção Geral.
+    </h2>
+
+    <img
+      src="./assets/pc.png"
+      alt="Montagem e manutenção de computadores"
+      class="imagem-tech"
+    />
+    
+
+    <footer>
+
+    </footer class="pe">
+
+
+
+
+
   </body>
-</html>
