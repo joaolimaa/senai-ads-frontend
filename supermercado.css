@@ -1,6 +1,115 @@
+body {
+    background-color: #ffffff;
+    /* Define a cor de fundo da página */
+    font-family: Arial, sans-serif;
+    /* Define a fonte principal do site */
+    margin: 0px;
+    /* Esse cara define a margem das 4 direções (topo, fundo, esquerda, direita)*/
+    margin-top: 0;
+    /* Esse cara define a margem do topo*/
+    margin-bottom: 0;
+    /* Esse cara define a margem do fundo*/
+    margin-left: 0;
+    /* Esse cara define a margem do lado esquerdo*/
+    margin-right: 0;
+    /* Esse cara define a margem do lado direito*/
+    padding: 0px;
+    /* Cria um espaço interno entre a borda da página e o conteúdo */
+}
+.titulo {
+    display: block;
+
+
+
+}
 .titulo-principal {
-    color: #3b3b3b;
-    background-color: blue;
-    font-size: 10px;
-    font-weight: 800;
+    display: block;
+    color: #ffffff;
+    /* Define a cor do texto como branco */
+    background-color: #000000;
+    /* Define um fundo verde para o título */
+    font-size: 36px;
+    /* Define o tamanho da fonte */
+    font-weight: bold;
+    /* Deixa o texto mais grosso/negrito */
+    text-align: left;
+    /* Centraliza o texto */
+    padding: 10px;
+    /* Adiciona espaço interno ao redor do texto */
+
+    padding: 5px;
+
+    margin: 0px;
+
+   
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 25px;
+    color: #fff3e0;
+   
+
+}
+
+.subtitulo {
+    color: #333333;
+    /* Cor do texto */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-top: 20px;
+    /* Espaço acima do elemento */
+    margin-bottom: 10px;
+    /* Espaço abaixo do elemento */
+}
+
+.texto-destaque {
+    color: #000000;
+    /* Cor laranja avermelhada para chamar atenção */
+    font-weight: 200;
+    /* Deixa o texto em negrito */
+    background-color: #fff3e0;
+    /* Fundo claro para destacar */
+    padding: 8px;
+    /* Espaço interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+.imagem-tech {
+    display: block;
+    /* Faz a imagem se comportar como bloco */
+    margin: 20px auto;
+    /* Centraliza a imagem horizontalmente */
+    border-radius: 12px;
+    /* Adiciona uma borda verde */
+    width: 500px;
+    height: 200;
+}
+
+.link-site {
+    color: #1565c0;
+    /* Cor azul para o link */
+    text-decoration: none;
+    /* Remove o sublinhado padrão do link */
+    font-weight: bold;
+    /* Deixa o texto do link mais forte */
+}
+
+.link-site:hover {
+    color: #0d47a1;
+    /* Muda a cor quando o mouse passa em cima */
+    text-decoration: underline;
+    /* Adiciona sublinhado no hover */
+}
+
+
+
+.pe {
+    background-color: #000000;
+    
 }
