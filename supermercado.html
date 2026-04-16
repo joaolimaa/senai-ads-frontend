@@ -8,9 +8,9 @@
     <!-- Permite usar acentos e caracteres especiais corretamente -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Faz a página se adaptar melhor a telas menores -->
-    <title class="titulo">Supermercado Bom Preço</title>
+    <title>Supermercado Bom Preço</title>
     <!-- Título que aparece na aba do navegador -->
-    <link rel="icon" href="./assets/grocery-store.ico" />
+    <link rel="icon" href="./assets/carrinho.png" />
     <!-- Ícone da página que aparece ao lado do título na aba -->
     <link rel="stylesheet" href="supermercado.css" />
     <!-- Faz a ligação com o arquivo CSS externo -->
@@ -20,46 +20,81 @@
     <!-- Tudo que fica dentro do body aparece visivelmente na página -->
 
     <div class="titulo-principal">
-      <h1 class="titulo-principal">DISPLAY <br> TECH</h1>
+    
+      <h1>Display <br> Tech</h1>
 
-      <nav class="centro">      <!-- Área de navegação da página -->
-        <a href="#inicio" class="centro">Início</a>
+      <nav style="display: flex;">
+        <!-- Área de navegação da página -->
+        <a href="#inicio">Início</a>
         <!-- Link do menu apontando para a seção início -->
-        <a href="#ofertas" class="centro">Ofertas</a>
+        <a href="#ofertas">Ofertas</a>
         <!-- Link do menu apontando para a seção ofertas -->
-        <a href="#contato" class="centro">Contato</a>
+        <a href="#contato">Contato</a>
         <!-- Link do menu apontando para a seção contato -->
       </nav>
+
     </div>
+    <!-- Título principal da página com uma classe para estilizar no CSS -->
+
+    <h2 class="subtitulo">
+      Montagem e Manutenção geral (hadwares e Softweres).
+    </h2>
+    <!-- Parágrafo com texto de apresentação -->
+
+    <span class="texto-destaque">Venha conhecer o melhor suporte técnico da região.</span>
+    <!-- Texto curto em linha, sem quebrar automaticamente -->
+
+    <br />
+    <!-- Quebra de linha -->
+    <br />
+    <!-- Outra quebra de linha para separar visualmente -->
+
+    <img
+      src="imagem.jpg"
+      alt="Imagem de produtos do supermercado"
+      class="imagem-supermercado"
+    />
+    <!-- Imagem ilustrativa com largura de 300 pixels e classe para estilização -->
+
     
+
+
     <p>
       Visite nosso site parceiro:
       <a href="https://www.google.com" target="_blank" class="link-site">
         Clique aqui
       </a>
     </p>
-    
 
-    
-    <!-- Título principal da página com uma classe para estilizar no CSS -->
+    <h2 id="ofertas">Lista de frutas disponíveis</h2>
+    <!-- Subtítulo da seção -->
+    <ul class="lista-frutas">
+      <!-- Lista não ordenada, usada quando a ordem não importa -->
+      <li>Maçã</li>
+      <!-- Item da lista -->
+      <li>Banana</li>
+      <!-- Item da lista -->
+      <li>Uva</li>
+      <!-- Item da lista -->
+      <li>Laranja</li>
+      <!-- Item da lista -->
+    </ul>
 
-    <h2 class="subtitulo">
-      manutenção Geral.
-    </h2>
+    <h2 id="contato">Passos para fazer uma compra</h2>
+    <!-- Outro subtítulo -->
+    <ol class="lista-passos">
+      <!-- Lista ordenada, usada quando existe sequência -->
+      <li>Escolher os produtos</li>
+      <!-- Primeiro passo -->
+      <li>Ir até o caixa</li>
+      <!-- Segundo passo -->
+      <li>Efetuar o pagamento</li>
+      <!-- Terceiro passo -->
+      <li>Levar as compras para casa</li>
+      <!-- Quarto passo -->
+    </ol>
 
-    <img
-      src="./assets/pc.png"
-      alt="Montagem e manutenção de computadores"
-      class="imagem-tech"
-    />
-    
-
-    <footer>
-
-    </footer class="pe">
-
-
-
-
-
+    <button class="botao-compra">Finalizar compra</button>
+    <!-- Botão da página -->
   </body>
+</html>
