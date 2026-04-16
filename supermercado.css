@@ -16,19 +16,17 @@ body {
     padding: 0px;
     /* Cria um espaço interno entre a borda da página e o conteúdo */
 }
-.titulo {
-    display: block;
 
-
-
-}
 .titulo-principal {
-    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 0;  
     color: #ffffff;
     /* Define a cor do texto como branco */
     background-color: #000000;
     /* Define um fundo verde para o título */
-    font-size: 36px;
+    font-size: 40px;
     /* Define o tamanho da fonte */
     font-weight: bold;
     /* Deixa o texto mais grosso/negrito */
@@ -36,22 +34,9 @@ body {
     /* Centraliza o texto */
     padding: 10px;
     /* Adiciona espaço interno ao redor do texto */
-
-    padding: 5px;
-
-    margin: 0px;
-
+    border-radius: 0px;
+    /* Arredonda as bordas */
    
-}
-
-.centro{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    font-size: 25px;
-    color: #fff3e0;
-   
-
 }
 
 .subtitulo {
@@ -68,9 +53,9 @@ body {
 }
 
 .texto-destaque {
-    color: #000000;
+    color: #484646;
     /* Cor laranja avermelhada para chamar atenção */
-    font-weight: 200;
+    font-weight: bold;
     /* Deixa o texto em negrito */
     background-color: #fff3e0;
     /* Fundo claro para destacar */
@@ -80,15 +65,16 @@ body {
     /* Bordas arredondadas */
 }
 
-.imagem-tech {
+.imagem-supermercado {
     display: block;
     /* Faz a imagem se comportar como bloco */
     margin: 20px auto;
     /* Centraliza a imagem horizontalmente */
     border-radius: 12px;
+    /* Arredonda as bordas da imagem */
+    border: 3px solid #000000;
     /* Adiciona uma borda verde */
-    width: 500px;
-    height: 200;
+    width: 300px;
 }
 
 .link-site {
@@ -108,8 +94,76 @@ body {
 }
 
 
+.titulo-principal a:hover {
+    color: #c8e6c9;
+    /* Altera a cor dos links ao passar o mouse */
+}
 
-.pe {
-    background-color: #000000;
-    
+h2 {
+    color: #000000;
+    /* Define a cor dos subtítulos */
+    margin-top: 30px;
+    /* Espaço acima dos subtítulos */
+}
+
+.lista-frutas {
+    background-color: #ffffff;
+    /* Fundo branco para a lista */
+    padding: 20px;
+    /* Espaço interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    width: fit-content;
+    /* Faz a largura se ajustar ao conteúdo */
+}
+
+.lista-frutas li {
+    color: #333333;
+    /* Cor do texto dos itens */
+    margin-bottom: 8px;
+    /* Espaço abaixo de cada item */
+}
+
+.lista-passos {
+    background-color: #ffffff;
+    /* Fundo branco para a lista ordenada */
+    padding: 20px;
+    /* Espaço interno */
+    border-radius: 30px;
+    /* Bordas arredondadas */
+    width: 150px;
+    /* Ajusta a largura ao conteúdo */
+}
+
+.lista-passos li {
+    color: #333333;
+    /* Cor dos itens */
+    margin-bottom: 8px;
+    /* Espaço abaixo de cada item */
+}
+
+.botao-compra {
+    background-color: #00ff8c;
+    /* Fundo laranja no botão */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Remove a borda padrão */
+    padding: 12px 20px;
+    /* Espaço interno vertical e horizontal */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Texto em negrito */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Mostra a mãozinha ao passar o mouse */
+    margin-top: 20px;
+    /* Espaço acima do botão */
+}
+
+.botao-compra:hover {
+    background-color: #00ffc3;
+    /* Muda a cor do botão ao passar o mouse */
 }
