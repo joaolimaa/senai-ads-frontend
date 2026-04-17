@@ -1,100 +1,72 @@
 <!doctype html>
-<!-- Informa ao navegador que este documento usa HTML5 -->
 <html lang="pt-br">
-  <!-- Início do documento HTML e definição do idioma como português do Brasil -->
-  <head>
-    <!-- Parte de configurações da página, que não aparece diretamente no conteúdo -->
-    <meta charset="UTF-8" />
-    <!-- Permite usar acentos e caracteres especiais corretamente -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Faz a página se adaptar melhor a telas menores -->
-    <title>Supermercado Bom Preço</title>
-    <!-- Título que aparece na aba do navegador -->
-    <link rel="icon" href="./assets/carrinho.png" />
-    <!-- Ícone da página que aparece ao lado do título na aba -->
-    <link rel="stylesheet" href="supermercado.css" />
-    <!-- Faz a ligação com o arquivo CSS externo -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Tech</title>
+  <link rel="stylesheet" href="supermercado.css" />
+</head>
 
-  <body>
-    <!-- Tudo que fica dentro do body aparece visivelmente na página -->
-
-    <div class="titulo-principal">
-    
-      <h1>Display <br> Tech</h1>
-
-      <nav style="display: flex;">
-        <!-- Área de navegação da página -->
-        <a href="#inicio">Início</a>
-        <!-- Link do menu apontando para a seção início -->
-        <a href="#ofertas">Ofertas</a>
-        <!-- Link do menu apontando para a seção ofertas -->
-        <a href="#contato">Contato</a>
-        <!-- Link do menu apontando para a seção contato -->
-      </nav>
-
-    </div>
-    <!-- Título principal da página com uma classe para estilizar no CSS -->
-
-    <h2 class="subtitulo">
-      Montagem e Manutenção geral (hadwares e Softweres).
-    </h2>
-    <!-- Parágrafo com texto de apresentação -->
-
-    <span class="texto-destaque">Venha conhecer o melhor suporte técnico da região.</span>
-    <!-- Texto curto em linha, sem quebrar automaticamente -->
-
-    <br />
-    <!-- Quebra de linha -->
-    <br />
-    <!-- Outra quebra de linha para separar visualmente -->
-
-    <img
-      src="imagem.jpg"
-      alt="Imagem de produtos do supermercado"
-      class="imagem-supermercado"
-    />
-    <!-- Imagem ilustrativa com largura de 300 pixels e classe para estilização -->
-
-    
+<body>
 
 
+  <div class="titulo-principal">
+    <h1>Display Tech</h1>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+    </nav>
+  </div>
+
+
+  <h2 class="subtitulo" id="inicio">
+    Assistência técnica em computadores
+  </h2>
+
+  <p class="texto-destaque">
+    Montagem, manutenção e instalação de softwares com qualidade e segurança.
+  </p>
+
+  <img
+    src="./assets/pc.png"
+    alt="Assistência técnica"
+    class="imagem-supermercado"
+  />
+
+  
+  <h2 id="servicos">Nossos serviços</h2>
+
+  <ul class="lista-tech">
+    <li>Montagem de computadores</li>
+    <li>Manutenção de hardware</li>
+    <li>Formatação e limpeza</li>
+    <li>Instalação de programas</li>
+  </ul>
+
+  <h2 id="como-funciona">Como funciona</h2>
+
+  <ol class="lista-passos">
+    <li>Você entra em contato</li>
+    <li>Explica o problema</li>
+    <li>Recebe o orçamento</li>
+    <li>Realizamos o serviço</li>
+  </ol>
+
+  <button class="botao-compra">Solicitar atendimento</button>
+
+  <footer class="rodape">
+    <p>© 2026 Danilo Alves. Todos os direitos reservados.</p>
     <p>
-      Visite nosso site parceiro:
-      <a href="https://www.google.com" target="_blank" class="link-site">
-        Clique aqui
+      Instagram: 
+      <a href="https://instagram.com/Allves__uai" target="_blank">
+        @Allves__uai
       </a>
     </p>
-
-    <h2 id="ofertas">Lista de frutas disponíveis</h2>
-    <!-- Subtítulo da seção -->
-    <ul class="lista-frutas">
-      <!-- Lista não ordenada, usada quando a ordem não importa -->
-      <li>Maçã</li>
-      <!-- Item da lista -->
-      <li>Banana</li>
-      <!-- Item da lista -->
-      <li>Uva</li>
-      <!-- Item da lista -->
-      <li>Laranja</li>
-      <!-- Item da lista -->
-    </ul>
-
-    <h2 id="contato">Passos para fazer uma compra</h2>
-    <!-- Outro subtítulo -->
-    <ol class="lista-passos">
-      <!-- Lista ordenada, usada quando existe sequência -->
-      <li>Escolher os produtos</li>
-      <!-- Primeiro passo -->
-      <li>Ir até o caixa</li>
-      <!-- Segundo passo -->
-      <li>Efetuar o pagamento</li>
-      <!-- Terceiro passo -->
-      <li>Levar as compras para casa</li>
-      <!-- Quarto passo -->
-    </ol>
-
-    <button class="botao-compra">Finalizar compra</button>
-    <!-- Botão da página -->
-  </body>
+    <p class="frase">
+      Este conteúdo está protegido por leis de direitos autorais. A reprodução sem autorização é proibida.
+    </p>
+  </footer>
+</body>
 </html>
