@@ -1,11 +1,12 @@
 body {
-    background-color: #ffffff;
+    background-color: #e6e6e6;
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth; /* scroll suave para links internos */
 }
 
-
+/* Mantido exatamente como antes */
 .titulo-principal {
     position: fixed;
     width: 100%;
@@ -14,7 +15,6 @@ body {
     background-color: #1f2937;
     padding: 10px;
 }
-
 
 .titulo-principal nav {
     margin-top: 10px;
@@ -25,61 +25,60 @@ body {
     margin-right: 15px;
     text-decoration: none;
     font-size: 15px;
+    transition: color 0.3s;
 }
 
 .titulo-principal a:hover {
     color: #00e676;
 }
 
-
 .subtitulo {
     text-align: center;
     margin-top: 120px;
     color: #000000;
+    font-size: 20px;
 }
-
 
 .texto-destaque {
     display: block;
     text-align: center;
     background-color: #d1fae5;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     width: fit-content;
     margin: 10px auto;
+    font-weight: bold;
 }
-
 
 .imagem-supermercado {
     display: block;
     margin: 20px auto;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
     border: 2px solid #1f2937;
+    transition: transform 0.3s;
 }
 
 
 h2 {
     text-align: center;
     color: #1f2937;
+    margin-top: 40px;
 }
 
-.lista-tech {
-    
-    padding: 25px;
-    border-radius: 8px;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.lista-passos {
-  
+.lista-tech, .lista-passos {
     padding: 25px;
     border-radius: 8px;
     width: fit-content;
     margin: 20px auto;
+    transition: transform 0.2s;
 }
 
+.lista-tech li:hover, .lista-passos li:hover {
+    transform: translateX(5px);
+    color: #16a34a;
+}
 
 .botao-compra {
     display: block;
@@ -87,36 +86,40 @@ h2 {
     background-color: #000000;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 12px 25px;
     border-radius: 6px;
     cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    transition: all 0.3s;
 }
 
 .botao-compra:hover {
     background-color: #16a34a;
+    transform: scale(1.05);
 }
-
 
 .rodape {
     background-color: #111;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 25px 10px;
     font-size: 14px;
-  }
-  
-  .rodape a {
+    margin-top: 40px;
+}
+
+.rodape a {
     color: #00aced;
     text-decoration: none;
-  }
-  
-  .rodape a:hover {
+    transition: color 0.3s;
+}
+
+.rodape a:hover {
     text-decoration: underline;
-  }
-  
-  .rodape .frase {
+    color: #00ffcc;
+}
+
+.rodape .frase {
     margin-top: 10px;
     font-size: 12px;
     color: #ccc;
-  }
+}
