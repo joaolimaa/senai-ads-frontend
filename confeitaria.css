@@ -1,0 +1,248 @@
+body {
+  background-color: whitesmoke;
+  /* Define a cor de fundo da página */
+  font-family: Arial, sans-serif;
+  /* Define a fonte principal do site */
+  margin: 100px;
+  /* Esse cara define a margem das 4 direções (topo, fundo, esquerda, direita)*/
+  margin-top: 0;
+  /* Esse cara define a margem do topo*/
+  margin-bottom: 0;
+  /* Esse cara define a margem do fundo*/
+  margin-left: 0;
+  /* Esse cara define a margem do lado esquerdo*/
+  margin-right: 0;
+  /* Esse cara define a margem do lado direito*/
+  padding: 20px;
+  /* Cria um espaço interno entre a borda da página e o conteúdo */
+}
+
+.titulo-principal {
+  color: #ffffff;
+  /* Define a cor do texto como branco */
+  background-color: #f3a76a;
+  /* Define um fundo verde para o título */
+  font-size: 36px;
+  /* Define o tamanho da fonte */
+  font-weight: 800;
+  /* Deixa o texto mais grosso/negrito */
+  text-align: center;
+  /* Centraliza o texto */
+  padding: 20px;
+  /* Adiciona espaço interno ao redor do texto */
+  border-radius: 10px;
+  /* Arredonda as bordas */
+}
+
+.cores-titulo-principal {
+  background-color: #f3a76a;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.subtitulo {
+  color: #333333;
+  /* Cor do texto */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  text-align: center;
+  /* Centraliza o texto */
+  margin-top: 20px;
+  /* Espaço acima do elemento */
+  margin-bottom: 20px;
+  /* Espaço abaixo do elemento */
+}
+
+.texto-destaque {
+  color: #f7f7f7;
+  /* Cor laranja avermelhada para chamar atenção */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  background-color: #f3a76a;
+  /* Fundo claro para destacar */
+  padding: 8px;
+  /* Espaço interno */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+}
+
+.imagem {
+  display: block;
+  /* Faz a imagem se comportar como bloco */
+  margin: 0px auto;
+  /* Centraliza a imagem horizontalmente */
+  border-radius: 20px;
+  /* Arredonda as bordas da imagem */
+  border: 3px solid wheat;
+  /* Adiciona uma borda verde */
+  width: 1250px;
+  height: 550px;
+}
+.link-site {
+  color: #1565c0;
+  /* Cor azul para o link */
+  text-decoration: none;
+  /* Remove o sublinhado padrão do link */
+  font-weight: bold;
+  /* Deixa o texto do link mais forte */
+}
+
+.link-site:hover {
+  color: #0d47a1;
+  /* Muda a cor quando o mouse passa em cima */
+  text-decoration: underline;
+  /* Adiciona sublinhado no hover */
+}
+
+.menu {
+  background-color: #f3a76a;
+
+  /* Fundo verde para o menu */
+  padding: 15px;
+  /* Espaço interno */
+  margin-top: 20px;
+  /* Espaço acima do menu */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  text-align: center;
+  /* Centraliza os links */
+}
+
+.menu a {
+  color: rgb(255, 255, 255);
+  /* Cor branca para os links do menu */
+  text-decoration: none;
+  /* Remove o sublinhado */
+  margin: 0 15px;
+  /* Espaçamento lateral entre os links */
+  font-weight: bold;
+  /* Deixa os links em negrito */
+}
+
+.menu a:hover {
+  color: #000000;
+  /* Altera a cor dos links ao passar o mouse */
+}
+
+h2 {
+  color: black;
+  /* Define a cor dos subtítulos */
+  margin-top: 30px;
+  /* Espaço acima dos subtítulos */
+}
+
+.lista-bolos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.botao-compra {
+  background-color: #f3a76a;
+  /* Fundo laranja no botão */
+  color: white;
+  /* Texto branco */
+  border: none;
+  /* Remove a borda padrão */
+  padding: 12px 20px;
+  /* Espaço interno vertical e horizontal */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  font-weight: bold;
+  /* Texto em negrito */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  /* Mostra a mãozinha ao passar o mouse */
+  margin-top: 20px;
+  /* Espaço acima do botão */
+  margin-bottom: 50px;
+  width: 200px;
+}
+
+.botao-compra:hover {
+  background-color: rgb(175, 133, 54);
+  /* Muda a cor do botão ao passar o mouse */
+}
+.botao-ingredientes {
+  background-color: #f3a76a;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.botao-ingredientes:hover {
+  background-color: #fef9ff;
+}
+
+.itens-escolha {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.rodape {
+  background-color: #f3a76a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.rodape a {
+  color: #00aced;
+  text-decoration: none;
+}
+.rodape a:hover {
+  text-decoration: underline;
+}
+.rodape .frase {
+  margin-top: 10px;
+  font-size: 12px;
+  color: black;
+}
+.plano-de-fundo {
+  background-color: #ecff7d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+s .sabores {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.botoes-sabores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    align-content: stretch;
+    align-items: center;
+}
+
+.painel-selecao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
