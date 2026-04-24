@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CL MotoSpeed - Vendas de Motos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+:root {
+  --vermelho: #e63946;
+  --preto: #111111;
+  --cinza: #222222;
+  --cinza-claro: #f4f4f4;
+  --branco: #ffffff;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cinza-claro);
+  color: var(--preto);
+}
+
+header {
+  background: var(--preto);
+  color: var(--branco);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: var(--vermelho);
+}
+
+header nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+header nav a:hover { color: var(--vermelho); }
+
+.hero {
+  background: var(--preto);
+  color: var(--branco);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  color: var(--vermelho);
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  max-width: 500px;
+  margin: 0 auto 28px;
+}
+
+.hero a {
+  display: inline-block;
+  background: var(--vermelho);
+  color: var(--branco);
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.hero a:hover { background: #c0303a; }
+
+.section-title {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  padding: 50px 0 10px;
+  color: var(--preto);
+}
+
+.section-sub {
+  text-align: center;
+  color: #666;
+  margin-bottom: 36px;
+  font-size: 0.95rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  padding: 0 30px 60px;
+}
+
+.card {
+  background: var(--branco);
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.card-body { padding: 18px; }
+
+.card-body h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.card-body p {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.card-preco {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--vermelho);
+  margin-bottom: 14px;
+}
+
+.card-body a {
+  display: block;
+  text-align: center;
+  background: var(--preto);
+  color: var(--branco);
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.card-body a:hover { background: var(--vermelho); }
+
+.por-que {
+  background: var(--preto);
+  color: var(--branco);
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.por-que h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: var(--vermelho);
+  margin-bottom: 36px;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.beneficio {
+  width: 200px;
+}
+
+.beneficio .icone {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.beneficio h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.beneficio p {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.contato {
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.contato h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.contato form {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contato input,
+.contato textarea {
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+  border-color: var(--vermelho);
+}
+
+.contato textarea { resize: vertical; height: 110px; }
+
+.contato button {
+  background: var(--vermelho);
+  color: var(--branco);
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contato button:hover { background: #c0303a; }
+
+footer {
+  background: var(--cinza);
+  color: #aaa;
+  text-align: center;
+  padding: 22px;
+  font-size: 0.88rem;
+}
+
+footer span { color: var(--vermelho); }
+
+
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">🏍️ CL MotoSpeed</div>
+    <nav>
+      <a href="#motos">Motos</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Sua Moto dos Sonhos<br>Está Aqui!</h1>
+    <p>As melhores motos com os melhores preços. Venha conferir nossas ofertas!</p>
+    <a href="#motos">Ver Motos</a>
+  </section>
+
+  <section id="motos">
+    <h2 class="section-title">Nossas Motos</h2>
+    <p class="section-sub">Encontre o modelo ideal para você</p>
+    <div class="cards">
+
+
+  <div class="card">
+    <div class="card-img">🏍️</div>
+    <div class="card-body">
+      <h3>Honda CG 160</h3>
+      <p>Econômica, confiável e ideal para o dia a dia nas cidades.</p>
+      <div class="card-preco">R$ 12.990</div>
+      <a href="#">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">🏍️</div>
+    <div class="card-body">
+      <h3>Yamaha Factor 150</h3>
+      <p>Design moderno e motor potente para quem busca estilo.</p>
+      <div class="card-preco">R$ 14.500</div>
+      <a href="#">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">🏍️</div>
+    <div class="card-body">
+      <h3>Suzuki GSX 150</h3>
+      <p>Alta performance e acabamento premium para aventureiros.</p>
+      <div class="card-preco">R$ 18.200</div>
+      <a href="#">Comprar</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">🏍️</div>
+    <div class="card-body">
+      <h3>Kawasaki Z400</h3>
+      <p>Esportiva, ágil e poderosa. Para quem não abre mão da velocidade.</p>
+      <div class="card-preco">R$ 29.900</div>
+      <a href="#">Comprar</a>
+    </div>
+  </div>
+
+</div>
+
+
+  </section>
+
+  <section class="por-que" id="vantagens">
+    <h2>Por Que Comprar Conosco?</h2>
+    <div class="beneficios">
+      <div class="beneficio">
+        <div class="icone">💳</div>
+        <h4>Parcelamento fácil</h4>
+        <p>Parcele em até 48x com as menores taxas do mercado.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icone">🛡️</div>
+        <h4>Garantia total</h4>
+        <p>1 ano de garantia em todas as motos seminovas.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icone">🚚</div>
+        <h4>Entrega rápida</h4>
+        <p>Receba sua moto em casa em até 3 dias úteis.</p>
+      </div>
+      <div class="beneficio">
+        <div class="icone">⭐</div>
+        <h4>Avaliação 5 estrelas</h4>
+        <p>Mais de 2.000 clientes satisfeitos em todo o Brasil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Tire suas dúvidas ou faça seu pedido diretamente aqui!</p>
+    <form>
+      <input type="text" placeholder="Seu nome" />
+      <input type="email" placeholder="Seu e-mail" />
+      <textarea placeholder="Sua mensagem..."></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 <span>MotoSpeed</span> — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
