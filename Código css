@@ -21,7 +21,6 @@ body {
     display: block;
     color: #ffffff;
     /* Define a cor do texto como branco */
-    background-color: black;
     /* Define um fundo para o título */
     font-size: 36px;
     /* Define o tamanho da fonte */
@@ -37,13 +36,14 @@ body {
 }
 
 .subtitulo {
+
     color: #333333;
     /* Cor do texto */
     font-size: 20px;
     /* Tamanho da fonte */
     text-align: center;
     /* Centraliza o texto */
-    margin-top: 20px;
+    margin-top: 280px;
     /* Espaço acima do elemento */
     margin-bottom: 10px;
     /* Espaço abaixo do elemento */
@@ -62,14 +62,14 @@ body {
     /* Bordas arredondadas */
 }
 
-.imagem-supermercado {
+.imagem-jogos {
     display: block;
     /* Faz a imagem se comportar como bloco */
     margin: 20px auto;
     /* Centraliza a imagem horizontalmente */
     border-radius: 12px;
     /* Arredonda as bordas da imagem */
-    border: 3px solid #2e7d32;
+    border: 3px solid black;
     /* Adiciona uma borda verde */
     width: 300px;
 }
@@ -91,7 +91,7 @@ body {
 }
 
 .menu {
-    background-color: black;
+    
     /* Fundo verde para o menu */
     padding: 0;
     /* Espaço interno */
@@ -121,7 +121,7 @@ body {
 }
 
 h2 {
-    color: #2e7d32;
+    color: black;
     /* Define a cor dos subtítulos */
     margin-top: 30px;
     /* Espaço acima dos subtítulos */
@@ -187,4 +187,23 @@ h2 {
 .botao-compra:hover {
     background-color: #00ffc3;
     /* Muda a cor do botão ao passar o mouse */
+}
+
+.lista-promocoes{
+    color: black;
+}
+.lista-promocoes a {
+    text-decoration: none;
+    color: red;
+}
+
+.lista-promocoes a:hover{
+    color: black;
+}
+
+.juncao-titulo-menu{
+    background-color: black;
+    position:fixed;
+    top:0;
+    width: 100%;
 }
