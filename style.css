@@ -1,0 +1,120 @@
+body {
+    background-color: #f8b0e7;
+    font-family: Arial, sans-serif;
+    margin: 0; /* remove espaços externos */
+    padding: 20px;
+}
+
+/* TÍTULO */
+.titulo-principal {
+    color: #ffffff;
+    background-color: #f401b3;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* SUBTÍTULO */
+.subtitulo {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* BOTÃO */
+.botao-produtos {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #d63384;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* MENU */
+.menu {
+    padding: 0px;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #c8e6c9;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+h2 {
+    color: #5e1b67;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* PRODUTOS */
+.produtos-container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 170px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+/* SOBRE NÓS */
+.sobrenos {
+    color: #ffffff;
+    background-color: #f401b3;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    background: #b062e7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
