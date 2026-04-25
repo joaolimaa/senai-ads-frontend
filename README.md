@@ -1,1 +1,0 @@
-# senai-ads-frontend
